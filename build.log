@@ -1,0 +1,247 @@
+./build.sh 
++ pwd
++ SOURCE_DIR=/home/edidada/muduo
++ BUILD_DIR=../build
++ BUILD_TYPE=release
++ INSTALL_DIR=../release-install-cpp11
++ CXX=g++
++ ln -sf ../build/release-cpp11/compile_commands.json
++ mkdir -p ../build/release-cpp11
++ cd ../build/release-cpp11
++ cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=../release-install-cpp11 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /home/edidada/muduo
+-- Boost version: 1.69.0
+-- found curl
+-- found protobuf
+-- found zlib
+-- CXX_FLAGS = -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/edidada/build/release-cpp11
++ make
+Scanning dependencies of target muduo_base
+[  0%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.o
+[  0%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.o
+[  0%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.o
+[  1%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o
+[  1%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/Date.cc.o
+[  1%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o
+[  2%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o
+[  2%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.o
+[  2%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.o
+[  2%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.o
+[  3%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.o
+[  3%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o
+[  3%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.o
+[  3%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.o
+[  4%] Building CXX object muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.o
+[  4%] Linking CXX static library ../../lib/libmuduo_base.a
+[  4%] Built target muduo_base
+Scanning dependencies of target timezone_unittest
+[  4%] Building CXX object muduo/base/tests/CMakeFiles/timezone_unittest.dir/TimeZone_unittest.cc.o
+[  4%] Linking CXX executable ../../../bin/timezone_unittest
+[  4%] Built target timezone_unittest
+Scanning dependencies of target threadpool_test
+[  5%] Building CXX object muduo/base/tests/CMakeFiles/threadpool_test.dir/ThreadPool_test.cc.o
+[  5%] Linking CXX executable ../../../bin/threadpool_test
+[  5%] Built target threadpool_test
+Scanning dependencies of target processinfo_test
+[  5%] Building CXX object muduo/base/tests/CMakeFiles/processinfo_test.dir/ProcessInfo_test.cc.o
+[  6%] Linking CXX executable ../../../bin/processinfo_test
+[  6%] Built target processinfo_test
+Scanning dependencies of target date_unittest
+[  6%] Building CXX object muduo/base/tests/CMakeFiles/date_unittest.dir/Date_unittest.cc.o
+[  6%] Linking CXX executable ../../../bin/date_unittest
+[  6%] Built target date_unittest
+Scanning dependencies of target boundedblockingqueue_test
+[  7%] Building CXX object muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/BoundedBlockingQueue_test.cc.o
+[  7%] Linking CXX executable ../../../bin/boundedblockingqueue_test
+[  7%] Built target boundedblockingqueue_test
+Scanning dependencies of target timestamp_unittest
+[  8%] Building CXX object muduo/base/tests/CMakeFiles/timestamp_unittest.dir/Timestamp_unittest.cc.o
+[  8%] Linking CXX executable ../../../bin/timestamp_unittest
+[  8%] Built target timestamp_unittest
+Scanning dependencies of target fileutil_test
+[  8%] Building CXX object muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o
+[  9%] Linking CXX executable ../../../bin/fileutil_test
+[  9%] Built target fileutil_test
+Scanning dependencies of target threadlocal_test
+[ 10%] Building CXX object muduo/base/tests/CMakeFiles/threadlocal_test.dir/ThreadLocal_test.cc.o
+[ 10%] Linking CXX executable ../../../bin/threadlocal_test
+[ 10%] Built target threadlocal_test
+Scanning dependencies of target threadlocalsingleton_test
+[ 10%] Building CXX object muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/ThreadLocalSingleton_test.cc.o
+[ 10%] Linking CXX executable ../../../bin/threadlocalsingleton_test
+[ 10%] Built target threadlocalsingleton_test
+Scanning dependencies of target exception_test
+[ 10%] Building CXX object muduo/base/tests/CMakeFiles/exception_test.dir/Exception_test.cc.o
+[ 11%] Linking CXX executable ../../../bin/exception_test
+[ 11%] Built target exception_test
+Scanning dependencies of target asynclogging_test
+[ 11%] Building CXX object muduo/base/tests/CMakeFiles/asynclogging_test.dir/AsyncLogging_test.cc.o
+[ 11%] Linking CXX executable ../../../bin/asynclogging_test
+[ 11%] Built target asynclogging_test
+Scanning dependencies of target blockingqueue_test
+[ 11%] Building CXX object muduo/base/tests/CMakeFiles/blockingqueue_test.dir/BlockingQueue_test.cc.o
+[ 11%] Linking CXX executable ../../../bin/blockingqueue_test
+[ 11%] Built target blockingqueue_test
+Scanning dependencies of target thread_test
+[ 11%] Building CXX object muduo/base/tests/CMakeFiles/thread_test.dir/Thread_test.cc.o
+[ 11%] Linking CXX executable ../../../bin/thread_test
+[ 11%] Built target thread_test
+Scanning dependencies of target atomic_unittest
+[ 12%] Building CXX object muduo/base/tests/CMakeFiles/atomic_unittest.dir/Atomic_unittest.cc.o
+[ 12%] Linking CXX executable ../../../bin/atomic_unittest
+[ 12%] Built target atomic_unittest
+Scanning dependencies of target mutex_test
+[ 13%] Building CXX object muduo/base/tests/CMakeFiles/mutex_test.dir/Mutex_test.cc.o
+[ 13%] Linking CXX executable ../../../bin/mutex_test
+[ 13%] Built target mutex_test
+Scanning dependencies of target blockingqueue_bench
+[ 15%] Building CXX object muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/BlockingQueue_bench.cc.o
+[ 15%] Linking CXX executable ../../../bin/blockingqueue_bench
+[ 15%] Built target blockingqueue_bench
+Scanning dependencies of target gzipfile_test
+[ 15%] Building CXX object muduo/base/tests/CMakeFiles/gzipfile_test.dir/GzipFile_test.cc.o
+[ 16%] Linking CXX executable ../../../bin/gzipfile_test
+[ 16%] Built target gzipfile_test
+Scanning dependencies of target logfile_test
+[ 16%] Building CXX object muduo/base/tests/CMakeFiles/logfile_test.dir/LogFile_test.cc.o
+[ 16%] Linking CXX executable ../../../bin/logfile_test
+[ 16%] Built target logfile_test
+Scanning dependencies of target logging_test
+[ 16%] Building CXX object muduo/base/tests/CMakeFiles/logging_test.dir/Logging_test.cc.o
+[ 17%] Linking CXX executable ../../../bin/logging_test
+[ 17%] Built target logging_test
+Scanning dependencies of target logstream_bench
+[ 17%] Building CXX object muduo/base/tests/CMakeFiles/logstream_bench.dir/LogStream_bench.cc.o
+[ 17%] Linking CXX executable ../../../bin/logstream_bench
+[ 17%] Built target logstream_bench
+Scanning dependencies of target singleton_test
+[ 17%] Building CXX object muduo/base/tests/CMakeFiles/singleton_test.dir/Singleton_test.cc.o
+[ 18%] Linking CXX executable ../../../bin/singleton_test
+[ 18%] Built target singleton_test
+Scanning dependencies of target logstream_test
+[ 18%] Building CXX object muduo/base/tests/CMakeFiles/logstream_test.dir/LogStream_test.cc.o
+[ 19%] Linking CXX executable ../../../bin/logstream_test
+[ 19%] Built target logstream_test
+Scanning dependencies of target fork_test
+[ 19%] Building CXX object muduo/base/tests/CMakeFiles/fork_test.dir/Fork_test.cc.o
+[ 19%] Linking CXX executable ../../../bin/fork_test
+[ 19%] Built target fork_test
+Scanning dependencies of target singleton_threadlocal_test
+[ 19%] Building CXX object muduo/base/tests/CMakeFiles/singleton_threadlocal_test.dir/SingletonThreadLocal_test.cc.o
+[ 19%] Linking CXX executable ../../../bin/singleton_threadlocal_test
+[ 19%] Built target singleton_threadlocal_test
+Scanning dependencies of target thread_bench
+[ 20%] Building CXX object muduo/base/tests/CMakeFiles/thread_bench.dir/Thread_bench.cc.o
+[ 20%] Linking CXX executable ../../../bin/thread_bench
+[ 20%] Built target thread_bench
+Scanning dependencies of target muduo_net
+[ 20%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/Acceptor.cc.o
+[ 21%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/Buffer.cc.o
+[ 21%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/Channel.cc.o
+[ 21%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/Connector.cc.o
+[ 21%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/EventLoop.cc.o
+[ 22%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/EventLoopThread.cc.o
+[ 22%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/EventLoopThreadPool.cc.o
+[ 22%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/InetAddress.cc.o
+[ 22%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/Poller.cc.o
+[ 23%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/poller/DefaultPoller.cc.o
+[ 23%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/poller/EPollPoller.cc.o
+[ 23%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/poller/PollPoller.cc.o
+[ 23%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/Socket.cc.o
+[ 24%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/SocketsOps.cc.o
+[ 24%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/TcpClient.cc.o
+[ 24%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/TcpConnection.cc.o
+[ 24%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/TcpServer.cc.o
+[ 25%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/Timer.cc.o
+[ 25%] Building CXX object muduo/net/CMakeFiles/muduo_net.dir/TimerQueue.cc.o
+[ 25%] Linking CXX static library ../../lib/libmuduo_net.a
+[ 25%] Built target muduo_net
+Scanning dependencies of target muduo_http
+[ 25%] Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o
+[ 25%] Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o
+[ 26%] Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o
+[ 26%] Linking CXX static library ../../../lib/libmuduo_http.a
+[ 26%] Built target muduo_http
+Scanning dependencies of target httpserver_test
+[ 26%] Building CXX object muduo/net/http/CMakeFiles/httpserver_test.dir/tests/HttpServer_test.cc.o
+[ 27%] Linking CXX executable ../../../bin/httpserver_test
+[ 27%] Built target httpserver_test
+Scanning dependencies of target httprequest_unittest
+[ 27%] Building CXX object muduo/net/http/CMakeFiles/httprequest_unittest.dir/tests/HttpRequest_unittest.cc.o
+[ 27%] Linking CXX executable ../../../bin/httprequest_unittest
+[ 27%] Built target httprequest_unittest
+Scanning dependencies of target muduo_inspect
+[ 27%] Building CXX object muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.o
+[ 27%] Building CXX object muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.o
+[ 29%] Building CXX object muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.o
+[ 29%] Building CXX object muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.o
+[ 29%] Linking CXX static library ../../../lib/libmuduo_inspect.a
+[ 29%] Built target muduo_inspect
+Scanning dependencies of target inspector_test
+[ 29%] Building CXX object muduo/net/inspect/CMakeFiles/inspector_test.dir/tests/Inspector_test.cc.o
+[ 30%] Linking CXX executable ../../../bin/inspector_test
+[ 30%] Built target inspector_test
+Scanning dependencies of target timerqueue_unittest
+[ 30%] Building CXX object muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o
+[ 30%] Linking CXX executable ../../../bin/timerqueue_unittest
+[ 30%] Built target timerqueue_unittest
+Scanning dependencies of target tcpclient_reg3
+[ 31%] Building CXX object muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/TcpClient_reg3.cc.o
+[ 31%] Linking CXX executable ../../../bin/tcpclient_reg3
+[ 31%] Built target tcpclient_reg3
+Scanning dependencies of target echoclient_unittest
+[ 31%] Building CXX object muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.o
+[ 31%] Linking CXX executable ../../../bin/echoclient_unittest
+[ 31%] Built target echoclient_unittest
+Scanning dependencies of target buffer_unittest
+[ 31%] Building CXX object muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.o
+[ 31%] Linking CXX executable ../../../bin/buffer_unittest
+[ 31%] Built target buffer_unittest
+Scanning dependencies of target eventloop_unittest
+[ 31%] Building CXX object muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o
+[ 31%] Linking CXX executable ../../../bin/eventloop_unittest
+[ 31%] Built target eventloop_unittest
+Scanning dependencies of target tcpclient_reg1
+[ 32%] Building CXX object muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o
+[ 32%] Linking CXX executable ../../../bin/tcpclient_reg1
+[ 32%] Built target tcpclient_reg1
+Scanning dependencies of target channel_test
+[ 32%] Building CXX object muduo/net/tests/CMakeFiles/channel_test.dir/Channel_test.cc.o
+[ 32%] Linking CXX executable ../../../bin/channel_test
+[ 32%] Built target channel_test
+Scanning dependencies of target eventloopthread_unittest
+[ 32%] Building CXX object muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.o
+[ 33%] Linking CXX executable ../../../bin/eventloopthread_unittest
+[ 33%] Built target eventloopthread_unittest
+Scanning dependencies of target tcpclient_reg2
+[ 33%] Building CXX object muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/TcpClient_reg2.cc.o
+[ 33%] Linking CXX executable ../../../bin/tcpclient_reg2
+[ 33%] Built target tcpclient_reg2
+Scanning dependencies of target eventloopthreadpool_unittest
+[ 33%] Building CXX object muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.o
+[ 33%] Linking CXX executable ../../../bin/eventloopthreadpool_unittest
+[ 33%] Built target eventloopthreadpool_unittest
+Scanning dependencies of target echoserver_unittest
+[ 33%] Building CXX object muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.o
+[ 34%] Linking CXX executable ../../../bin/echoserver_unittest
+[ 34%] Built target echoserver_unittest
+Scanning dependencies of target inetaddress_unittest
+[ 34%] Building CXX object muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.o
+[ 34%] Linking CXX executable ../../../bin/inetaddress_unittest
+[ 34%] Built target inetaddress_unittest
+Scanning dependencies of target zlibstream_unittest
+[ 34%] Building CXX object muduo/net/tests/CMakeFiles/zlibstream_unittest.dir/ZlibStream_unittest.cc.o
+[ 35%] Linking CXX executable ../../../bin/zlibstream_unittest
+[ 35%] Built target zlibstream_unittest
+Scanning dependencies of target muduo_protobuf_codec
+[ 35%] Building CXX object muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/ProtobufCodecLite.cc.o
+[ 36%] Linking CXX static library ../../../lib/libmuduo_protobuf_codec.a
+[ 36%] Built target muduo_protobuf_codec
+[ 37%] Generating rpc.pb.cc, rpc.pb.h
+/bin/sh: 1: protoc: not found
+make[2]: *** [muduo/net/protorpc/rpc.pb.cc] 错误 127
+make[1]: *** [muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire.dir/all] 错误 2
+make: *** [all] 错误 2
+
