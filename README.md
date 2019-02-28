@@ -14,4 +14,13 @@ sudo apt-get install protobuf-compiler
 `doxygen : 依赖: libclang1-3.6 (>= 3.2) 但是它将不会被安装`
 
 
+```shell
+
+cd /home/edidada/build/release-cpp11
+export CTEST_OUTPUT_ON_FAILURE=TRUE
+echo $CTEST_OUTPUT_ON_FAILURE
+cd /home/edidada/muduo
+doxygen
+
+```
 
