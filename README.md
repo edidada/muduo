@@ -8,3 +8,10 @@
 sudo apt-get install protobuf-compiler
 
 ```
+
+~/build/release
+
+`doxygen : 依赖: libclang1-3.6 (>= 3.2) 但是它将不会被安装`
+
+
+
