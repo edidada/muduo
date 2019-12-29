@@ -1,4 +1,7 @@
-#include <examples/ace/logging/logrecord.pb.h>
+//#include <examples/ace/logging/logrecord.pb.h>
+
+#include "examples/ace/logging/logrecord.pb.h"
+//#include "/home/edidada/build/release-cpp11/examples/ace/logging/logrecord.pb.h"
 
 #include <muduo/base/Atomic.h>
 #include <muduo/base/FileUtil.h>
