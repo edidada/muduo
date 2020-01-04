@@ -6,8 +6,8 @@
 #ifndef MUDUO_BASE_BLOCKINGQUEUE_H
 #define MUDUO_BASE_BLOCKINGQUEUE_H
 
-#include <muduo/base/Condition.h>
-#include <muduo/base/Mutex.h>
+#include "muduo/base/Condition.h"
+#include "muduo/base/Mutex.h"
 
 #include <deque>
 #include <assert.h>
@@ -52,7 +52,7 @@ class BlockingQueue : noncopyable
     assert(!queue_.empty());
     T front(std::move(queue_.front()));
     queue_.pop_front();
-    return std::move(front);
+    return front;
   }
 
   size_t size() const
