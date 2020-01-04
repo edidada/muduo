@@ -1,6 +1,4 @@
-//#include <examples/ace/logging/logrecord.pb.h>
-
-#include "/home/edidada/build/release-cpp11/examples/ace/logging/logrecord.pb.h"
+#include "examples/ace/logging/logrecord.pb.h"
 
 #include <muduo/base/Mutex.h>
 #include <muduo/base/Logging.h>
